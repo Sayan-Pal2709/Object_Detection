@@ -40,7 +40,7 @@ def send_email(frame):
 net = cv2.dnn.readNetFromCaffe('MobileNetSSD_deploy.prototxt', 'MobileNetSSD_deploy.caffemodel')
 threads = []
 # Open a video file or an image file or a camera stream
-cap = cv2.VideoCapture("./niggavideo.mp4")  # Change the index to use a different camera
+cap = cv2.VideoCapture(0)  # Change the index to use a different camera
 
 # List of classes for MobileNet SSD
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
